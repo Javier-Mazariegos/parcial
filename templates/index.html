@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+   
+    <img class="avatar" src="{{image_file}}" alt="avatar">
+
+    <form method="POST" action="">
+      <div class="form-group">
+        <input type="text" class="form-control" name="palabra"  placeholder="String">
+      </div>
+      <button type="submit" class="btn btn-primary">Handle</button>
+    </form>
+
+      <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+                <th scope="col">{{my_data}}</th>
+          </tr>
+        </thead>
+      </table>
+
+{% endblock %}
